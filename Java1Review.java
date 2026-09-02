@@ -54,6 +54,18 @@ public class Java1Review {
         double average = (double)sum/ (double)numArray.length;
         return average;
     }
+    public static void toLowerCase(String[] array) {
+        String[] lowerCase = array;
+        for (int i = 0; i < lowerCase.length; i++) {
+            String a = lowerCase[i];
+            lowerCase[i] = a.toLowerCase();
+        }
+        array = lowerCase;
+
+    }
+    public static String[] toLowerCaseCopy(String[] array) {
+        return array; //it said unchanged, so its unchanged
+    }
 
 
 }
