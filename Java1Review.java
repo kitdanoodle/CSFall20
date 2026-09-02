@@ -66,6 +66,9 @@ public class Java1Review {
     public static String[] toLowerCaseCopy(String[] array) {
         return array; //it said unchanged, so its unchanged
     }
+    public static int[] removeDuplicates(int[] array) {
+        //something something
+    }
 
 
 }
