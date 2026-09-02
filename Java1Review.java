@@ -14,5 +14,29 @@ public class Java1Review {
         double quotient = num / num2;
         return quotient;
     }
+    public static boolean isDivisibleBy7(int num) {
+        boolean answer;
+        if ((num % 7) == 0) {
+           answer = true;
+        }
+        else {
+            answer = false;
+        }
+        return answer;
+    }
+    public static int findMin(int num, int num2, int num3){
+       int lowest;
+        if (num < num2 && num < num3) {
+            lowest = num;
+        }
+        else if (num2 < num && num2 < num3) {
+            lowest = num2;
+        }
+        else {
+            lowest = num3;
+        }
+        return lowest;
+    }
+
 
 }
