@@ -37,6 +37,23 @@ public class Java1Review {
         }
         return lowest;
     }
+    public static int findMin(int[] numArray) {
+        int num = 0;
+        for (i = 0; i < numArray.length; i++) {
+            if (numArray[i] < num) {
+                num = numArray[i];
+            }
+        }
+        return num;
+    }
+    public static double average(int[] numArray) {
+        int sum = 0;
+        for (i = 0; i < numArray.length; i++) {
+            sum += numArray[i];
+        }
+        double average = (double)sum/ (double)numArray.length;
+        return average;
+    }
 
 
 }
