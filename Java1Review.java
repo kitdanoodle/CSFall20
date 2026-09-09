@@ -9,9 +9,20 @@ public class Java1Review {
         // JUnitTests.java.) To run this method in Eclipse, right-click
         // Java1Review.java in the Package Explorer and select "Run As" >
         // "Java Application" from the context menu.
+        String[] arraya = {"ABC"};
+        toLowerCaseCopy(arraya);
+        System.out.println("---------------------");
+        for (int i = 0; i < arraya.length; i++) {
+            System.out.println(arraya[i]);
+        }
+
+
     }
     public static double divide(double num, double num2) {
-        double quotient = num / num2;
+        return num / num2;
+    }
+    public static int divide(int num, int num2) {
+        int quotient = num / num2;
         return quotient;
     }
     public static boolean isDivisibleBy7(int num) {
@@ -19,6 +30,7 @@ public class Java1Review {
         if ((num % 7) == 0) {
            answer = true;
         }
+
         else {
             answer = false;
         }
@@ -38,8 +50,8 @@ public class Java1Review {
         return lowest;
     }
     public static int findMin(int[] numArray) {
-        int num = 0;
-        for (i = 0; i < numArray.length; i++) {
+        int num = 999999;
+        for (int i = 0; i < numArray.length - 1; i++) {
             if (numArray[i] < num) {
                 num = numArray[i];
             }
@@ -48,7 +60,7 @@ public class Java1Review {
     }
     public static double average(int[] numArray) {
         int sum = 0;
-        for (i = 0; i < numArray.length; i++) {
+        for (int i = 0; i < numArray.length; i++) {
             sum += numArray[i];
         }
         double average = (double)sum/ (double)numArray.length;
@@ -64,11 +76,30 @@ public class Java1Review {
 
     }
     public static String[] toLowerCaseCopy(String[] array) {
-        return array; //it said unchanged, so its unchanged
+        String[] arrayA = array;
+        return arrayA; //it said unchanged, so its unchanged
     }
     public static int[] removeDuplicates(int[] array) {
-        //something something
+       int[] arrayNew = array;
+       int num1 = 0;
+       int num2 = 0;
+        for (int i = 0; i < arrayNew.length; i++) {
+            num1 = arrayNew[i];
+            System.out.println(num1);
+            for (int j = i + 1; j < arrayNew.length; j++) {
+                num2 = arrayNew[j];
+                System.out.println(num2);
+                if (num1 == num2) {
+                    arrayNew[i] = 0;
+                    arrayNew[j] = 0;
+                }
+            }
+        }
+        return arrayNew;
     }
 
 
+    public static String main(String s) {
+        return s;
+    }
 }
